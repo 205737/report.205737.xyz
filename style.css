@@ -1,0 +1,73 @@
+:root {
+  --color-dark: #141619;
+  --color-mid-dark: #2c2e3a;
+  --color-deep-blue: #050a44;
+  --color-bright-blue: #0a21c0;
+  --color-light-gray: #b3b4bd;
+  /* i.e. background-colour: var(--color-light-red); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders don't mess with layout */
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light-gray);
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Ensures the body takes up the full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--color-deep-blue);
+  color: var(--color-light-gray);
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--color-mid-dark);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;  /* Align the links to the right */
+  align-items: center;
+}
+
+nav a {
+  color: var(--color-light-gray);
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  background-color: var(--color-bright-blue);
+}
+
+nav .active {
+  background-color: var(--color-bright-blue); /* Highlight color */
+  color: white; /* Text color for active link */
+}
+
+section {
+  padding: 20px;
+  background-color: var(--color-mid-dark);
+  margin-top: 20px;
+  border-radius: 8px;
+  margin: 0 15px; /* Adds space on the sides of the section */
+}
+
+footer {
+  background-color: var(--color-deep-blue);
+  color: var(--color-light-gray);
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
