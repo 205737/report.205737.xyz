@@ -76,6 +76,11 @@ footer {
   margin-top: auto; /* Pushes the footer to the bottom */
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Word Count Table */
 table {
   font-family: arial, sans-serif;
