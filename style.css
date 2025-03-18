@@ -80,6 +80,11 @@ footer {
   margin-right: auto;
 }
 
+video {
+    display: block;
+    margin: auto;
+}
+
 /* Word Count Table */
 table {
   font-family: arial, sans-serif;
