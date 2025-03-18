@@ -4,20 +4,19 @@
   --color-deep-blue: #050a44;
   --color-bright-blue: #0a21c0;
   --color-light-gray: #b3b4bd;
-  /* i.e. background-colour: var(--color-light-red); */
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensures padding and borders don't mess with layout */
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--color-dark);
   color: var(--color-light-gray);
   font-family: Arial, sans-serif;
-  min-height: 100vh; /* Ensures the body takes up the full viewport height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +39,7 @@ nav {
   z-index: 1000;
   padding: 15px;
   display: flex;
-  justify-content: flex-end;  /* Align the links to the right */
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -65,7 +64,7 @@ section {
   background-color: var(--color-mid-dark);
   margin-top: 20px;
   border-radius: 8px;
-  margin: 0 15px; /* Adds space on the sides of the section */
+  margin: 0 15px;
 }
 
 footer {
@@ -73,7 +72,7 @@ footer {
   color: var(--color-light-gray);
   text-align: center;
   padding: 10px;
-  margin-top: auto; /* Pushes the footer to the bottom */
+  margin-top: auto;
 }
 
 .center {
